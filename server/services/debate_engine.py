@@ -17,7 +17,7 @@ class DebateEngine:
         Here’s what has been said so far:
         {context}
 
-        Now provide your next argument or counterpoint (2–3 sentences).
+        Now provide your next argument or counterpoint (2–3 sentences).Do not make it too long AND try to keep it simple. Remember to be like a human.
         """
         return call_groq(prompt)
 
