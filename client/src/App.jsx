@@ -1,4 +1,4 @@
-import { useState } from "react";
+/*import { useState } from "react";
 
 function App() {
   const [topic, setTopic] = useState("");
@@ -59,6 +59,31 @@ function App() {
         </div>
       )}
     </div>
+  );
+}
+
+export default App;
+*/
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import DebateRoom from "./pages/DebateRoom";
+
+function App() {
+  return (
+    <Router>
+      <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <Navbar />
+        <main className="flex-grow">
+         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/debate" element={<DebateRoom />} />
+        </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
