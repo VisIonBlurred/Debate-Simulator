@@ -12,12 +12,23 @@ function TopicInput({ onSubmit }) {
   return (
     <div className="flex flex-col items-center mt-8 space-y-4">
       <input
-        type="text"
+         type="text"
         placeholder="Enter a debate topic..."
         value={topic}
         onChange={(e) => setTopic(e.target.value)}
-        className="w-full max-w-md px-4 py-3 rounded-xl text-slate-900 focus:ring-2 focus:ring-indigo-400 outline-none"
-      />
+        className="
+          w-full max-w-md px-4 py-3 
+          rounded-xl 
+          text-slate-100
+          bg-slate-800 
+          placeholder-slate-400 
+          outline-none 
+          ring-2 ring-transparent focus:ring-2 focus:ring-indigo-400
+          border border-slate-600 focus:border-indigo-400
+          shadow-md focus:shadow-indigo-500/30
+          "
+        />
+
       <div className="flex gap-4">
         <button
           onClick={() => onSubmit(topic)}

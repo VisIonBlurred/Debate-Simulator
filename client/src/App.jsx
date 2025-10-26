@@ -73,13 +73,13 @@ import DebateRoom from "./pages/DebateRoom";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <div className="flex flex-col min-h-screen w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white">
         <Navbar />
-        <main className="flex-grow">
-         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/debate" element={<DebateRoom />} />
-        </Routes>
+        <main className="flex-grow w-full">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/debate" element={<DebateRoom />} />
+          </Routes>
         </main>
         <Footer />
       </div>

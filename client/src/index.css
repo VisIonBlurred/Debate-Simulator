@@ -6,12 +6,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #131C30;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  justify-content: center;
+  display: grid;
+  
 }
 
 a {
@@ -29,6 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100vw;
 }
 
 h1 {
@@ -36,6 +41,9 @@ h1 {
   line-height: 1.1;
 }
 
+#root{
+  width: 100vw;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
