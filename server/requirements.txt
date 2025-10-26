@@ -1,0 +1,4 @@
+groq
+dotenv
+flask
+flask_cors
